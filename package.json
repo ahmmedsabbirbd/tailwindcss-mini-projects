@@ -1,0 +1,23 @@
+{
+  "name": "sabbir.me",
+  "version": "1.0.0",
+  "description": "\"My portfolio website\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahmmedsabbirbd/sabbir.me.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ahmmedsabbirbd/sabbir.me/issues"
+  },
+  "homepage": "https://github.com/ahmmedsabbirbd/sabbir.me#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.0.13"
+  }
+}
