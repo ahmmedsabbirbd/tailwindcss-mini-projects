@@ -1,31 +1,31 @@
+/*
+Theme Name: SabbiR.Me
+Author: RIBBAS
+Author URI: https://web.facebook.com/ahmmedsabbirbdme/
+Version: 1.0.0
+Text Domain: ahmmedsabbirbd.github.io/sabbirme/
+*/
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-    /*** use per pas for blog branch */
-    /* .blog-branch {
-        @apply xl:text-indigo-700 lg:text-indigo-600 md:text-indigo-500 sm:text-blue-900 xs:text-blue-800 m:text-blue-700;
-    } */
-}
-
 @layer utilities {
     .container {
         @apply mx-auto;
-
         max-width: 1140px;
     }
 
     /*** ICON */
     @font-face {
         font-family: "sabbirme";
-        src: url("../fonts/sabbirme.eot?51838577");
-        src: url("../fonts/sabbirme.eot?51838577#iefix")
+        src: url("fonts/sabbirme.eot?51838577");
+        src: url("fonts/sabbirme.eot?51838577#iefix")
                 format("embedded-opentype"),
-            url("../fonts/sabbirme.woff2?51838577") format("woff2"),
-            url("../fonts/sabbirme.woff?51838577") format("woff"),
-            url("../fonts/sabbirme.ttf?51838577") format("truetype"),
-            url("../fonts/sabbirme.svg?51838577#sabbirme") format("svg");
+            url("fonts/sabbirme.woff2?51838577") format("woff2"),
+            url("fonts/sabbirme.woff?51838577") format("woff"),
+            url("fonts/sabbirme.ttf?51838577") format("truetype"),
+            url("fonts/sabbirme.svg?51838577#sabbirme") format("svg");
         font-weight: normal;
         font-style: normal;
     }
@@ -150,17 +150,9 @@
     }
 
     /***********************************
-	DEFALT STYLES
-	***********************************/
-    /* .btn {
-        padding: 12px 25px;
-        background: #f2dbdb;
-        border-radius: 0 50px 0 35px;
-    } */
-
-    /***********************************
-	HEADER STYLES
-	***********************************/
-    .header {
+    BASE STYLES
+    ***********************************/
+    .btn {
+        @apply py-1 sm:py-2 xl:py-3 px-3 sm:px-4 xl:px-5 rounded-tr-50 rounded-bl-35;
     }
 }

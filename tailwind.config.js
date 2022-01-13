@@ -24,13 +24,26 @@ module.exports = {
               'body-color' : '#C9B6B6',
               'secondary' : '#009520',
               'black' : {
-                'light' : '#1D1D1D',
+                'light'   : '#1D1D1D',
                 'default' : '#000000',
+                'text'    : '#94a3b8',
               } ,
+          },
+          fontSize: {
+            h1: ['14px', '20px'],
+            h2: ['16px', '24px'],
+            h3: ['20px', '28px'],
+            h4: ['24px', '32px'],
+            h5: ['24px', '32px'],
+            h6: ['24px', '32px'],
           },
           borderRadius: {
             '35': '35px',
             '50': '50px',
+          },
+          boxShadow: {
+            'header': '-1px -7px 10px 0px #f2dbdb',
+            'footer': '-2px 7px 10px 0px #f2dbdb;',
           },
       },
   },
