@@ -155,4 +155,29 @@ Text Domain: ahmmedsabbirbd.github.io/sabbirme/
     .btn {
         @apply py-1 sm:py-2 xl:py-3 px-3 sm:px-4 xl:px-5 rounded-tr-50 rounded-bl-35;
     }
+
+    h1,
+    .h1 {
+        @apply text-h1 sm:text-smh1 md:text-mdh1 xl:text-xlh1 xxl:text-xxlh1;
+    }
+    h2,
+    .h2 {
+        @apply text-h2 sm:text-smh2 md:text-mdh2 xl:text-xlh2;
+    }
+    h3,
+    .h3 {
+        @apply text-h3 sm:text-smh3 md:text-mdh3 xl:text-xlh3;
+    }
+    h4,
+    .h4 {
+        @apply text-h4 sm:text-smh4 md:text-mdh4 xl:text-xlh4;
+    }
+    h5,
+    .h5 {
+        @apply text-h5 sm:text-smh5 md:text-mdh5 xl:text-xlh5;
+    }
+    h6,
+    .h6 {
+        @apply text-h6 sm:text-smh6 md:text-mdh6 xl:text-xlh6;
+    }
 }
