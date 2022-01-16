@@ -1,6 +1,6 @@
 module.exports = { 
   content: ["./*.{html,php}", "./html/*.{html,js}"],
-  darkMode: 'class',
+  darkMode: 'media',
   theme: {
       screens: { 
           xs    : '321px',
