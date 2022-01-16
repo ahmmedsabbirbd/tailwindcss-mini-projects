@@ -1,6 +1,6 @@
 module.exports = { 
   content: ["./*.{html,php}", "./html/*.{html,js}"],
-  darkMode: 'media',
+  darkMode: 'class',
   theme: {
       screens: { 
           xs    : '321px',
@@ -30,8 +30,7 @@ module.exports = {
               },
           },
           fontSize: {
-            h1: ['40px', '50px'],
-                xxlh1: ['38px', '48px'],
+            h1: ['40px', '50px'], 
                 xlh1: ['36px', '46px'], 
                 mdh1: ['34px', '44px'], 
                 smh1: ['32px', '42px'], 
