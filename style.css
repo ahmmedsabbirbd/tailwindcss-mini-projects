@@ -536,8 +536,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin: 0.25rem;
 }
 
-.-m-2 {
-  margin: -0.5rem;
+.-mx-\[7\.5px\] {
+  margin-left: -7.5px;
+  margin-right: -7.5px;
 }
 
 .mx-auto {
@@ -545,13 +546,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: auto;
 }
 
-.-mx-\[7\.5px\] {
-  margin-left: -7.5px;
-  margin-right: -7.5px;
-}
-
 .mb-\[3px\] {
   margin-bottom: 3px;
+}
+
+.mt-\[2px\] {
+  margin-top: 2px;
+}
+
+.mt-\[5px\] {
+  margin-top: 5px;
 }
 
 .mb-\[10px\] {
@@ -564,14 +568,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mt-\[25px\] {
   margin-top: 25px;
-}
-
-.mt-\[2px\] {
-  margin-top: 2px;
-}
-
-.mt-\[5px\] {
-  margin-top: 5px;
 }
 
 .block {
@@ -602,6 +598,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 100%;
 }
 
+.w-10 {
+  width: 2.5rem;
+}
+
 .w-\[140px\] {
   width: 140px;
 }
@@ -610,20 +610,28 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 180px;
 }
 
-.w-10 {
-  width: 2.5rem;
-}
-
 .max-w-\[65px\] {
   max-width: 65px;
+}
+
+.max-w-full {
+  max-width: 100%;
 }
 
 .max-w-\[580px\] {
   max-width: 580px;
 }
 
-.max-w-full {
-  max-width: 100%;
+.max-w-\[60px\] {
+  max-width: 60px;
+}
+
+.max-w-\[50px\] {
+  max-width: 50px;
+}
+
+.max-w-\[55px\] {
+  max-width: 55px;
 }
 
 .flex-col {
@@ -646,6 +654,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-content: space-between;
 }
 
+.space-y-\[20px\] > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(20px * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(20px * var(--tw-space-y-reverse));
+}
+
 .space-y-\[2px\] > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(2px * calc(1 - var(--tw-space-y-reverse)));
@@ -656,12 +670,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-space-y-reverse: 0;
   margin-top: calc(10px * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(10px * var(--tw-space-y-reverse));
-}
-
-.space-y-\[20px\] > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(20px * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(20px * var(--tw-space-y-reverse));
 }
 
 .overflow-hidden {
@@ -700,12 +708,8 @@ Ensure the default browser behavior of the `hidden` attribute.
      object-fit: cover;
 }
 
-.p-\[20px\] {
-  padding: 20px;
-}
-
-.p-\[15px\] {
-  padding: 15px;
+.p-\[10px\] {
+  padding: 10px;
 }
 
 .p-5 {
@@ -716,8 +720,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 1rem;
 }
 
-.p-\[10px\] {
-  padding: 10px;
+.p-\[20px\] {
+  padding: 20px;
+}
+
+.p-\[15px\] {
+  padding: 15px;
 }
 
 .py-\[30px\] {
@@ -730,20 +738,25 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 7.5px;
 }
 
-.pb-\[30px\] {
-  padding-bottom: 30px;
+.py-\[40px\] {
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
-.pl-\[15px\] {
-  padding-left: 15px;
+.pt-\[10px\] {
+  padding-top: 10px;
 }
 
 .pr-\[5px\] {
   padding-right: 5px;
 }
 
-.pt-\[10px\] {
-  padding-top: 10px;
+.pb-\[30px\] {
+  padding-bottom: 30px;
+}
+
+.pl-\[15px\] {
+  padding-left: 15px;
 }
 
 .text-center {
@@ -754,12 +767,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   text-align: right;
 }
 
-.font-nun {
-  font-family: Nunito, sans-serif;
-}
-
 .font-pub {
   font-family: Public Sans, sans-serif;
+}
+
+.font-nun {
+  font-family: Nunito, sans-serif;
 }
 
 .text-xs {
@@ -772,14 +785,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 28px;
 }
 
-.text-\[18px\] {
-  font-size: 18px;
-}
-
-.text-\[20px\] {
-  font-size: 20px;
-}
-
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -788,6 +793,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-\[18px\] {
+  font-size: 18px;
+}
+
+.text-\[20px\] {
+  font-size: 20px;
 }
 
 .font-bold {
@@ -1153,6 +1166,10 @@ h6, .h6 {
     max-width: 100px;
   }
 
+  .sm\:max-w-\[80px\] {
+    max-width: 80px;
+  }
+
   .sm\:justify-start {
     justify-content: flex-start;
   }
@@ -1188,12 +1205,17 @@ h6, .h6 {
     align-items: center;
   }
 
+  .md\:p-\[15px\] {
+    padding: 15px;
+  }
+
   .md\:p-\[25px\] {
     padding: 25px;
   }
 
-  .md\:p-\[15px\] {
-    padding: 15px;
+  .md\:py-\[40px\] {
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 
   .md\:py-\[50px\] {
@@ -1201,9 +1223,9 @@ h6, .h6 {
     padding-bottom: 50px;
   }
 
-  .md\:py-\[40px\] {
-    padding-top: 40px;
-    padding-bottom: 40px;
+  .md\:py-\[60px\] {
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 
   .md\:pb-\[50px\] {
@@ -1216,6 +1238,18 @@ h6, .h6 {
     max-width: 130px;
   }
 
+  .lg\:max-w-\[120px\] {
+    max-width: 120px;
+  }
+
+  .lg\:max-w-\[10px\] {
+    max-width: 10px;
+  }
+
+  .lg\:max-w-\[110px\] {
+    max-width: 110px;
+  }
+
   .lg\:p-\[30px\] {
     padding: 30px;
   }
@@ -1226,16 +1260,12 @@ h6, .h6 {
     margin-bottom: 5px;
   }
 
-  .xl\:mt-0 {
-    margin-top: 0px;
-  }
-
   .xl\:mt-\[3px\] {
     margin-top: 3px;
   }
 
-  .xl\:w-6\/12 {
-    width: 50%;
+  .xl\:mt-0 {
+    margin-top: 0px;
   }
 
   .xl\:w-7\/12 {
@@ -1244,6 +1274,10 @@ h6, .h6 {
 
   .xl\:w-5\/12 {
     width: 41.666667%;
+  }
+
+  .xl\:w-6\/12 {
+    width: 50%;
   }
 
   .xl\:p-1 {
