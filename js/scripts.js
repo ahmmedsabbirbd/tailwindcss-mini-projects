@@ -93,4 +93,58 @@
         console.log(err);
     });
 
+    /*** Worked Article Show */
+    fetch('https://ahmmedsabbirbd.github.io/Api.Me/sum-up/sum-up.txt').then((data) => {
+
+        return data.json();
+    }).then((completedata) => {
+
+        let data1 = "";
+        completedata.map((value) => {
+
+        /*** All value dynamic */
+        (value.title !== undefined) ? ( tdn = 'block' ) : (  tdn = 'none' );
+        (value.description !== undefined) ? ( ddn = 'block' ) : (  ddn = 'none' );
+        (value.category !== undefined) ? ( cdn = 'block' ) : (  cdn = 'none' );
+        (value.time_to_time !== undefined) ? ( t2tdn = 'block' ) : (  t2tdn = 'none' );
+        (value.image_1 !== undefined) ? ( i1dn = 'block' ) : (  i1dn = 'none' );
+        (value.image_2 !== undefined) ? ( i2dn = 'block' ) : (  i2dn = 'none' );
+        (value.publish_date !== undefined) ? ( pddn = 'block' ) : (  pddn = 'none' );
+        (value.url !== undefined) ? ( udn = 'inline-block' ) : (  udn = 'none' );
+
+
+
+            data1 += `<article class="group duration-300 bg-white dark:bg-gray-800 p-[10px] md:p-[15px] rounded-tr-50 rounded-bl-35">
+                        <div class="flex flex-wrap items-center -mx-[7.5px]">
+                            <div class="xl:w-12/12 px-[7.5px]">
+                                <div class="xl:pt-0 pt-[10px]">
+                                    <p class="text-p space-y-[2px] dark:text-black-text">Id : ${value.id}</p>
+                                    <h1 class="h6 mb-[3px] xl:mb-[5px] font-bold duration-300 dark:text-black-text" style="display: ${tdn}">
+                                        ${value.title}</h1>
+                                    <div class="text-p mb-[5px] space-y-[10px] dark:text-black-text">
+                                        <p style="display: ${tdn}">${value.description}</p>
+                                        <p style="display: ${cdn}">${value.category}</p>
+                                        <div class="media" style="display: ${i1dn}">
+                                            <img src="${value.image_1}" class="w-full h-full object-cover" alt="">
+                                        </div>
+                                        <div class="media" style="display: ${i2dn}">
+                                            <img src="${value.image_2}" class="w-full h-full object-cover" alt="">
+                                        </div>
+                                    </div>
+                                    <span class="block mt-[2px] xl:mt-[3px] text-indigo-800" style="display: ${t2tdn}">Worked : ${value.time_to_time}</span>
+                                    <span class="block mt-[2px] xl:mt-[3px] text-indigo-800" style="display: ${pddn}">Published date : ${value.publish_date}</span>
+                                    <a class="btn duration-300  hover:bg-red-600 bg-primary inline-block mt-[5px] font-bold"
+                                        target="_blank" href="${value.url}" style="display: ${udn}">Live view</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                `;
+        })
+        document.getElementById('u-article').innerHTML = data1;
+
+    }).catch((err) => {
+        console.log(err);
+    });
+
 }(jQuery));
