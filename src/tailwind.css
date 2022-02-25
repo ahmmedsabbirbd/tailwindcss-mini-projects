@@ -180,4 +180,11 @@ Text Domain: ahmmedsabbirbd.github.io/sabbirme/
     .h6 {
         @apply text-smh6 md:text-mdh6 xl:text-xlh6 xxl:text-h6;
     }
+
+    /***********************************
+    HEADER STYLES
+    ***********************************/
+    .header-active a.btn {
+        @apply bg-red-600;
+    }
 }

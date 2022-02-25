@@ -610,8 +610,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 180px;
 }
 
-.max-w-\[65px\] {
-  max-width: 65px;
+.max-w-\[60px\] {
+  max-width: 60px;
 }
 
 .max-w-full {
@@ -620,18 +620,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .max-w-\[580px\] {
   max-width: 580px;
-}
-
-.max-w-\[60px\] {
-  max-width: 60px;
-}
-
-.max-w-\[50px\] {
-  max-width: 50px;
-}
-
-.max-w-\[55px\] {
-  max-width: 55px;
 }
 
 .flex-col {
@@ -1076,6 +1064,15 @@ h6, .h6 {
   }
 }
 
+/***********************************
+    HEADER STYLES
+    ***********************************/
+
+.header-active a.btn {
+  --tw-bg-opacity: 1;
+  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
+}
+
 .hover\:bg-red-600:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(220 38 38 / var(--tw-bg-opacity));
@@ -1162,10 +1159,6 @@ h6, .h6 {
     width: 50%;
   }
 
-  .sm\:max-w-\[100px\] {
-    max-width: 100px;
-  }
-
   .sm\:max-w-\[80px\] {
     max-width: 80px;
   }
@@ -1234,18 +1227,6 @@ h6, .h6 {
 }
 
 @media (min-width: 768px) {
-  .lg\:max-w-\[130px\] {
-    max-width: 130px;
-  }
-
-  .lg\:max-w-\[120px\] {
-    max-width: 120px;
-  }
-
-  .lg\:max-w-\[10px\] {
-    max-width: 10px;
-  }
-
   .lg\:max-w-\[110px\] {
     max-width: 110px;
   }
