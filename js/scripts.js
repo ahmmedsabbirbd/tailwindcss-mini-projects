@@ -55,7 +55,7 @@
     document.body.classList.add(BrowserDetect.browser);
 
     /*** Worked Article Show */
-    fetch('https://ahmmedsabbirbd.github.io/Api.Me/sabbir.me/sabbir.me.txt').then((data) => {
+    fetch('https://ahmmedsabbirbd.github.io/Api.Me/sabbir.me/sabbir.me.json').then((data) => {
 
         return data.json();
     }).then((completedata) => {
@@ -94,7 +94,7 @@
     });
 
     /*** Worked Article Show */
-    fetch('https://ahmmedsabbirbd.github.io/Api.Me/sum-up/sum-up.txt').then((data) => {
+    fetch('https://ahmmedsabbirbd.github.io/Api.Me/sum-up/sum-up.json').then((data) => {
 
         return data.json();
     }).then((completedata) => {
